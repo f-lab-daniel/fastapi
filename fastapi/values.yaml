@@ -1,0 +1,20 @@
+replicaCount: 2
+
+namespace: helm-fastapi
+
+image:
+  repository: fastapi-tutorial
+  tag: v1
+  pullPolicy: IfNotPresent
+
+resources:
+  limits:
+    cpu: "2"
+    memory: "512Mi"
+  requests:
+    cpu: "1"
+    memory: "512Mi"
+
+service:
+  port: 80
+  targetPort: 80

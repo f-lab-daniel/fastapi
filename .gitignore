@@ -1,0 +1,15 @@
+# Python virtual environments
+venv/
+.venv/
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Tool / editor local config
+.serena/
+.idea/
+.vscode/
+
+# OS
+.DS_Store
